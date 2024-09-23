@@ -157,32 +157,12 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['area_ha'] !== null ? autolinker.link(feature.properties['area_ha'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Descripcio'] !== null ? autolinker.link(feature.properties['Descripcio'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['ZONA_DE_PR'] !== null ? autolinker.link(feature.properties['ZONA_DE_PR'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['CONTRATA'] !== null ? autolinker.link(feature.properties['CONTRATA'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['TERMINO_NU'] !== null ? autolinker.link(feature.properties['TERMINO_NU'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">ZONA_DE_PR</th>\
+                        <td class="visible-with-data" id="ZONA_DE_PR">' + (feature.properties['ZONA_DE_PR'] !== null ? autolinker.link(feature.properties['ZONA_DE_PR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">FACTOR_AMB</th>\
-                        <td class="visible-with-data" id="FACTOR_AMB">' + (feature.properties['FACTOR_AMB'] !== null ? autolinker.link(feature.properties['FACTOR_AMB'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['EVIDENCIA_'] !== null ? autolinker.link(feature.properties['EVIDENCIA_'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['FECHA'] !== null ? autolinker.link(feature.properties['FECHA'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['FACTOR_AMB'] !== null ? autolinker.link(feature.properties['FACTOR_AMB'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">HALLAZGOS</th>\
@@ -197,11 +177,8 @@
                         <td class="visible-with-data" id="PROGRAMA">' + (feature.properties['PROGRAMA'] !== null ? autolinker.link(feature.properties['PROGRAMA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">CONDICIONA</th>\
-                        <td class="visible-with-data" id="CONDICIONA">' + (feature.properties['CONDICIONA'] !== null ? autolinker.link(feature.properties['CONDICIONA'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['MEDIDAS'] !== null ? autolinker.link(feature.properties['MEDIDAS'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">MEDIDAS</th>\
+                        <td class="visible-with-data" id="MEDIDAS">' + (feature.properties['MEDIDAS'] !== null ? autolinker.link(feature.properties['MEDIDAS'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
